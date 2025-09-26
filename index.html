@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmLog - Seu diário de filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">FilmLog</a>
+                <div class="nav-links">
+                    <a href="#">Início</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Listas</a>
+                    <a href="#">Membros</a>
+                    <a href="#">Journal</a>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar filmes...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Conteúdo principal -->
+            <div class="content">
+                <h2 class="section-title">Filmes populares</h2>
+                <div class="films-grid" id="films-container">
+                    <!-- Os filmes serão inseridos aqui via JavaScript -->
+                </div>
+                
+                <h2 class="section-title">Avaliações recentes</h2>
+                <div class="recent-reviews" id="reviews-container-main">
+                    <!-- As avaliações serão inseridas aqui via JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="user-profile">
+                    <div class="user-avatar">U</div>
+                    <div class="user-info">
+                        <h3>Usuário</h3>
+                        <div class="user-stats">
+                            <span>123 filmes</span>
+                            <span>45 listas</span>
+                            <span>89 seguidores</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recent-activity">
+                    <h3>Atividade recente</h3>
+                    <div id="activity-container">
+                        <!-- Atividades serão inseridas aqui via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de detalhes do filme -->
+    <div class="modal" id="film-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-film-title">Título do Filme</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-poster-container">
+                    <img src="" alt="" class="modal-poster" id="modal-poster">
+                </div>
+                <div class="film-details">
+                    <div class="film-meta">
+                        <span id="modal-year">2023</span>
+                        <span id="modal-runtime">120 min</span>
+                        <span id="modal-genre">Drama</span>
+                    </div>
+                    <p class="film-overview" id="modal-overview">Descrição do filme...</p>
+                    
+                    <div class="review-section">
+                        <div class="review-form">
+                            <h3>Sua avaliação</h3>
+                            <div class="rating-input">
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5">★</label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4">★</label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3">★</label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2">★</label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1">★</label>
+                                </div>
+                            </div>
+                            <textarea placeholder="Escreva sua avaliação..."></textarea>
+                            <button id="submit-review">Enviar avaliação</button>
+                        </div>
+                        
+                        <div class="reviews-list" id="reviews-container">
+                            <!-- Avaliações serão inseridas aqui via JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FilmLog</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Pro</a></li>
+                        <li><a href="#">Aplicativos</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Comunidade</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Discussões</a></li>
+                        <li><a href="#">Tabela de líderes</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Termos de uso</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 FilmLog. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
